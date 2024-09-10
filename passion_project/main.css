@@ -63,10 +63,10 @@ body {
 
 @keyframes slide-right{
     0%{
-        transform:translateX(-100%);
+        transform:translateX(100%);
     }
     100%{
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
 
@@ -75,7 +75,7 @@ body {
     position: sticky;
     top: 10px;
     align-self: center;
-    width: 400px;
+    width: 350px;
     justify-content: center;
     border: white dotted;
 }
