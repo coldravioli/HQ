@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOP SECRET FILES</title>
+    <script>
+        function checkPassword() {
+            var correctPassword = "raya";
+            var enteredPassword = document.getElementById("password").value;
+            if (enteredPassword === correctPassword) {
+                alert("Password correct! Opening HQ...");
+                // Redirect to another page
+                window.location.href = "index.html";
+            } else {
+                alert("Incorrect password. Please see provided hint below:\nwhat's my name?");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>TOP SECRET:</h1>
+    <h2>to enter headquarters, you must provide proper password...</h2>
+    <form onsubmit="event.preventDefault(); checkPassword();">
+        <label for="password">blahbalbhablalh PASSWORDK ENTER:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="image" src = "hamburgershark.png" alt ="Submit" width="40" height="40">
+    </form>
+
+</body>
+</html>

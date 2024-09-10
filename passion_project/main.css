@@ -1,0 +1,78 @@
+h1 {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 900;
+    font-size: 200px;
+    color: rgb(36, 36, 122);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    line-height: 150px;
+
+}
+
+h2 {
+    font-family: 'Handjet', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #555;  /* Lighter color for the subtitle */
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Optional: Global body styling */
+.p1 {
+    font-family: 'Handjet', sans-serif;
+    background-color: #f4f4f4;
+    font-size: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 40px;
+}
+body {
+    background-image: url('bubbles.gif');
+    background-size: cover;           
+    background-position: center;      
+    background-repeat: no-repeat;     
+    background-attachment: fixed;     
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.movement p{
+    display: inline-block;
+    background-color: lightpink;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    animation: slide-right 15s linear infinite;
+}
+
+.movement{
+    background-color: lightpink;
+    width:100%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+@keyframes slide-right{
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.sticky {
+    background:lightblue;
+    position: sticky;
+    top: 10px;
+    align-self: center;
+    width: 20%;
+    justify-content: center;
+    border: white dotted;
+}
+
