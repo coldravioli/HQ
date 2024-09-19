@@ -1,5 +1,5 @@
 body {
-    background-image: url('sparkles.gif');
+    background-image: url('MOVING.gif');
     background-color: black;
     background-size: cover;           
     background-position: center;      
@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'La Belle Aurore', cursive; 
 }
 
 .container {
@@ -16,27 +17,24 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #fff;
-    top: 30px;
+    color: #ffffff82;
 }
 
 h1 {
     margin-bottom: 20px;
 }
 
-.fish-image {
-    display: none; 
-    width: 20%;
-    height: 20%;
-    border-radius: 50%;
-    overflow: hidden; 
-    position: fixed; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    z-index: 10; 
+#fish-container {
+    position: relative; /* Allow absolute positioning of fish images */
+    width: 100%; /* Fill available width */
+    height: 100%; /* Fill available height */
 }
 
+.draggable-fish {
+    width: 100px; /* Set a fixed width for all fish */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Allow for positioning in the container */
+}
 
 input {
     margin: 20px;
@@ -56,10 +54,10 @@ button {
     cursor: pointer;
     border: none;
     background-color: #1a0062;
-    color: white;
+    color: rgba(255, 255, 255, 0.608);
     border-radius: 5px;
-    margin-top: 120px;
-    position: absolute;
+    margin-top: 20px; /* Adjust spacing */
+    position: relative; /* Change to relative for better layout */
 }
 
 button:hover {
