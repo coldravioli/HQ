@@ -3,7 +3,11 @@ const fishImages = [
     'fish2.jpg',
     'fish3.jpg',
     'fish4.jpg',
-    'fish5.jpg'
+    'fish5.jpg',
+    'fish6.jpg',
+    'fish7.jpg',
+    'fish8.jpg',
+    'fish9.jpg'
 ];
 
 document.getElementById('ask-button').onclick = function() {
@@ -27,11 +31,10 @@ function addFish() {
     fish.alt = 'Fish';
     fish.classList.add('draggable-fish');
     
-    // Set initial position
+ 
     fish.style.position = 'absolute';
-    fish.style.top = Math.random() * (window.innerHeight - 100) + 'px'; // Adjust for height of the image
-    fish.style.left = Math.random() * (window.innerWidth - 100) + 'px'; // Adjust for width of the image
-    
+    fish.style.top = Math.random() * (window.innerHeight - 100) + 'px'; 
+    fish.style.left = Math.random() * (window.innerWidth - 100) + 'px';
     fishContainer.appendChild(fish);
     makeDraggable(fish);
 }
