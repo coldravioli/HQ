@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%
+}
+
+.block {
+    background: lightskyblue;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.inline {
+    background: pink;
+    padding:10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.container {
+    background: darkblue;
+    border: 1px solid;
+    padding:10px;
+    height: 600px;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: aligns items on the horizontal axis for row flexboxes; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.item {
+    background: bisque;
+    border: 1px solid;
+    padding: 10px;
+    width: 200px;
+}

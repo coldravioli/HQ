@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish 8 Ball</title>
+    <link rel="icon" type="image/x-icon" href="uglystar.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="8ball.css">
+</head>
+<body>
+    <div class="ball">
+        <div id="fish-container" class="fish-image"></div>
+        <input type="text" id="question-input" placeholder="Ask a question...">
+        <button id="ask-button">Enter</button>
+    </div>
+
+    <script>
+        const fishImages = [
+            'fish1.jpg',
+            'fish2.jpg',
+            'fish3.jpg',
+            'fish4.jpg',
+            'fish5.jpg'
+        ];
+
+        document.getElementById('ask-button').onclick = function() {
+            const fishContainer = document.getElementById('fish-container');
+            const randomIndex = Math.floor(Math.random() * fishImages.length);
+            const fishImage = fishImages[randomIndex];
+            fishContainer.innerHTML = `<img src="${fishImage}" alt="Fish">`;
+            fishContainer.style.display = 'flex';
+        };
+
+        document.getElementById('question-input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const fishContainer = document.getElementById('fish-container');
+                const randomIndex = Math.floor(Math.random() * fishImages.length);
+                const fishImage = fishImages[randomIndex];
+                fishContainer.innerHTML = `<img src="${fishImage}" alt="Fish">`;
+                fishContainer.style.display = 'flex';
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
