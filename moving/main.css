@@ -52,7 +52,7 @@ img {
     p {
         background-color: rgb(40, 40, 131);
     }
-    .mars {
+    /* .mars {
         background-image: url('mars.gif');
         background-size: contain; 
         background-repeat: no-repeat; 
@@ -66,7 +66,7 @@ img {
         align-items: center; 
         justify-content: center; 
         z-index: 1;
-    }
+    } */
     .video {
         display: block;
         position: center;
