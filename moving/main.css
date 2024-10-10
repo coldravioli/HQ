@@ -16,14 +16,13 @@ img {
     position: relative;
     overflow: hidden;}
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     body {
         background-color: black;
     }
     .video{
         display: none;
     }
-
     .sun {
         position: center;
         width: auto;
@@ -31,9 +30,33 @@ img {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
     body {
-        background-color: yellow;
+        background-color: rgb(0, 0, 0);
+        
+    }
+    .tinysun {
+        background-image: url('anothertiny.gif');
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        position: absolute; 
+        right: 25%;
+        bottom: 25%;
+        height: 50%; 
+        width: 50%; 
+        z-index: 10; 
+   
+        animation: spin 40s infinite linear;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
     .video{
         display: none;
@@ -44,11 +67,11 @@ img {
     }
 }
 
-@media screen and (max-width: 883px) {
+@media screen and (max-width: 1100px) {
     body {
        background-color:rgb(0, 0, 0);    
     }
-    
+
     p {
         background-color: rgb(40, 40, 131);
     }
@@ -67,23 +90,17 @@ img {
         justify-content: center; 
         z-index: 1;
     } */
-    .video {
-        display: block;
-        position: center;
-        width: auto;
-        height: 100%;
-    }
     .sun{
         display: none;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     body {
         background-color: rgb(0, 0, 0);
     }
 
-    .video{
+    .tinysun{
         display: none;
     }
     p {
@@ -94,15 +111,13 @@ img {
     }
 
     .galaxy {
-        background-image: url('galaxybig.jpg');
-        position: center;
+        background-image: url('farsun.jpg');
         background-size: 60%;
         background-repeat: no-repeat;
         background-position: center;
-        height: 900px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+        left: 25%;
+        height: 40%;
+        width:60%;
         -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
         box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
