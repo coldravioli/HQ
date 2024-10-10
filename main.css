@@ -79,13 +79,15 @@ a:hover {
 
 li {
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: "Positive System";
     max-width: 900px;
+    color: 0a3c5e;
 }
 
 ol {
     list-style-position: inside;
     padding-left: 0;
+    font-family: "Positive System";
   }
 
 blockquote {
