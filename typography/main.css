@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'lcddot';
+    src: url('lcddot_tr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: #aac2cc;
+}
+
+img {
+    max-width: 100%
+}
+
+h1 {
+    font-family: "LEDLIGHT";
+
+}
+
+.special {
+    font-family: 'lcddot';
+}

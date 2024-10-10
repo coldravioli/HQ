@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: #aac2cc;
+}
+
+img {
+    max-width: 100%
+}
+
+h1 {
+    font-family: "LEDLIGHT";
+    font-size: 120%;
+}
+
+.special {
+    font-family: 'LCDdot';
+}
