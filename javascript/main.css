@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%
+}
+
+body {
+    background: lightblue;
+}
+
+body.dark {
+    background: rgb(39, 49, 52);
+}
+
+.menu {
+    background: lightblue;
+    position: fixed;
+    right: -200px;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    transition: right .5s, background .5s;
+  }
+
+.menu.active {
+    right: 0;
+}
+
+.menu.glow {
+    background: lemonchiffon;
+}
+
+.gear {
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: transform .5s, background .5s;
+}
+
+.gear.spin {
+    transform: rotate(180deg);
+}
+
+.gear.glow {
+    background: lemonchiffon;
+}

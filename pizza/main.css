@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: 'receipt';
+    src: url('fake\ receipt.ttf');
+}
+
+h1 {
+    font-family: 'receipt';
+    color: blue;
+}
+
+
+img {
+    max-width: 100%
+}
+
+.main-container {
+    height: 95vh;
+    padding: 60px;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.top {
+    background: lightgreen;
+    height:20%;
+    width: 100%;
+    display: flex;
+}
+
+.top-item{
+    background:lightslategray;
+    border: 1px solid;
+    width:100%;
+}
+
+.bottom {
+    height:80%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    background: rgb(163, 134, 103);
+    width:30%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(112, 92, 72);
+    margin: 10px;
+    border-radius: 40%;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 5px solid rgb(112, 92, 72);
+}
+
+.left {
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza {
+    max-width: 120%;
+    max-height: 120%;
+}
