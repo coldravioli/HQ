@@ -11,5 +11,31 @@ h1 {
 }
 
 body {
-    background-color:greem;
+    /* background-color: rgb(239, 236, 233); */
+    background-color: #95d6f6;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 10px;
+      color:#230862;
+      background-image: url('bubbles.gif');
+      background-size: cover;           
+      background-position: center;      
+      background-repeat: no-repeat;     
+  
+  }
+
+  h1 {
+    font-size: 70px;
+    margin:5px 0px;
+    color:#ffffff;;
+    font-family: "Positive System";
+    font-weight: 500;
+    font-style: normal;
 }
+
+h2 {
+    font-family: Kemco Pixel;   
+    margin: 5px 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  }
